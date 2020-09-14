@@ -1,9 +1,9 @@
 var playlist = {nirvana: 'come as you are', crumb:'locket'}
-function updatePlaylist(artistName,songTitle){
+function updatePlaylist(playlist,artistName,songTitle){
   return Object.assign(playlist,{[artistName]:songTitle})
 }
 
-function removeFromPlaylist(object,key) {
-  delete playlist[key]
+function removeFromPlaylist(playlist,artistName) {
+  delete playlist[artistName]
   return playlist
 }
